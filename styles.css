@@ -1,0 +1,42 @@
+body {
+    background:rgb(244, 217, 245);
+}
+a:hover {
+    color: pink;
+}
+#home, #about,
+#work {
+    color:rgb(156, 116, 194);
+    text-align: center;
+}
+#me{
+    color:black;
+    
+}
+#contact{
+    color:blueviolet;
+}
+#github,
+#linkedin
+{
+    font-weight: bold;
+    font-size: 26px;
+    padding-bottom:64px;
+}
+.work{
+text-align: center;
+}
+.contact
+{
+    padding-bottom:44px;
+    font-size:26x;
+}
+#message{
+    height:62px;
+}
+
+footer { 
+    height:20px; 
+    background-color:lavender;
+    text-align:center; 
+    } 
