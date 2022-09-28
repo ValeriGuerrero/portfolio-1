@@ -5,23 +5,36 @@ a:hover {
     color: pink;
 }
 #home, #about,
-#work, #picture {
+#work {
     color:rgb(156, 116, 194);
     text-align: center;
+    padding: 5px 10px 6px;
 }
-#me{
+
+.about {
+    text-align: center;
     color:black;
     font-family: bold;
     
 }
 
-.about {
-    text-align: center;
-    
+#me {
+    margin: 20px 10px;
+}
+
+.work {
+    border: 3px solid coral;
+
+}
+
+.contact {
+    border: 3px solid coral;
+    border-radius: 15px;
 }
 
 #contact{
     color:blueviolet;
+    padding: 5px 10px 6px;
 }
 
 #github,
@@ -48,3 +61,8 @@ footer {
     background-color:lavender;
     text-align:center; 
     } 
+    
+    #date {
+    text-align: center;
+    margin-left: 10px; 
+    }
