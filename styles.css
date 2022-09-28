@@ -24,7 +24,7 @@ nav{
     text-align: center;
     color:black;
     font-family: bold;
-    background-color: rgb(232, 204, 208);
+    background-color: rgb(220, 204, 232);
     
 }
 
@@ -45,7 +45,7 @@ nav{
 }
 
 #contact {
-    color:black
+    color:black;
     padding: 5px 10px 6px;
     font-family: cursive;
 }
