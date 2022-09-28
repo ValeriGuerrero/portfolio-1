@@ -5,17 +5,25 @@ a:hover {
     color: pink;
 }
 #home, #about,
-#work {
+#work, #picture {
     color:rgb(156, 116, 194);
     text-align: center;
 }
 #me{
     color:black;
+    font-family: bold;
     
 }
+
+.about {
+    text-align: center;
+    
+}
+
 #contact{
     color:blueviolet;
 }
+
 #github,
 #linkedin
 {
