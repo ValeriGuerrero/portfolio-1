@@ -1,25 +1,36 @@
 body {
-    background:rgb(244, 217, 245);
+    background: whitesmoke;
+   
+
 }
 a:hover {
     color: pink;
 }
+
+nav{
+    position: fixed;
+    z-index: 5;
+}
+
 #home, #about,
 #work {
-    color:rgb(156, 116, 194);
+    color:black;
     text-align: center;
     padding: 5px 10px 6px;
+    font-family: cursive;
 }
 
 .about {
     text-align: center;
     color:black;
     font-family: bold;
+    background-color: rgb(232, 204, 208);
     
 }
 
 #me {
     margin: 20px 10px;
+    color: rgb(31, 2, 31);
 }
 
 .work {
@@ -30,11 +41,13 @@ a:hover {
 .contact {
     border: 3px solid coral;
     border-radius: 15px;
+    background-color: #c9dcf0;
 }
 
-#contact{
-    color:blueviolet;
+#contact {
+    color:black
     padding: 5px 10px 6px;
+    font-family: cursive;
 }
 
 #github,
@@ -47,22 +60,29 @@ a:hover {
 .work{
 text-align: center;
 }
-.contact
+
+.link {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+
+.contactOne
 {
     padding-bottom:44px;
     font-size:26x;
 }
+
 #message{
     height:62px;
 }
 
 footer { 
-    height:20px; 
+    height:100px; 
     background-color:lavender;
     text-align:center; 
     } 
     
     #date {
-    text-align: center;
     margin-left: 10px; 
     }
