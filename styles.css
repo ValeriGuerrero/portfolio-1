@@ -58,11 +58,7 @@ img {
 
 .work {
     border: 3px solid coral;
-}
-
-.contact {
-    border: 3px solid coral;
-    border-radius: 15px;
+    text-align: center;
 }
 
 #github,
@@ -72,28 +68,23 @@ img {
     font-size: 26px;
     padding-bottom:64px;
 }
-.work{
-text-align: center;
+
+.contact {
+    border: 3px solid coral;
+    border-radius: 15px;
+    white-space: normal;
+    text-align: center;
+    font-size:26x;
+}
+
+.contactOne {
+    text-align: left;
 }
 
 .link {
     display: inline-block;
     width: 300px;
     height: 200px;
-}
-
-.one {
-    margin-left: 350px;
-}
-
-.contactOne
-{
-    
-    padding-bottom:44px;
-    font-size:26x;
-    margin-left: 60%;
-    margin-bottom:10%;
-    margin-top: -11%;
 }
 
 #message{
@@ -104,8 +95,14 @@ footer {
     height:100px; 
     background-color:lavender;
     text-align:center; 
+    padding-top: 70px;
     } 
-    
-    #date {
+
+.bottom{
+    border: 6px solid rgb(244, 170, 170);
+    font-weight: bold;
+}
+
+#date {
     margin-left: 10px; 
-    }
+}
