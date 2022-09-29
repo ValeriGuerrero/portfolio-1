@@ -12,8 +12,13 @@ nav{
     z-index: 5;
 }
 
+.about, .work,
+.contact {
+    background-color: rgb(214, 192, 227);
+}
+
 #home, #about,
-#work {
+#work, h1#contact {
     color:black;
     text-align: center;
     padding: 5px 10px 6px;
@@ -24,8 +29,6 @@ nav{
     text-align: center;
     color:black;
     font-family: bold;
-    background-color: rgb(220, 204, 232);
-    
 }
 
 #me {
@@ -33,21 +36,34 @@ nav{
     color: rgb(31, 2, 31);
 }
 
+img {
+    height: 500px;
+    width: 400px;
+}
+.caption {
+    color:black;
+    background-color:white;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 13px;
+    top: 80%;
+    width: 15%;
+
+}
+
 .work {
     border: 3px solid coral;
-
 }
 
 .contact {
     border: 3px solid coral;
     border-radius: 15px;
-    background-color: #c9dcf0;
-}
-
-#contact {
-    color:black;
-    padding: 5px 10px 6px;
-    font-family: cursive;
 }
 
 #github,
@@ -67,10 +83,18 @@ text-align: center;
     height: 200px;
 }
 
+.one {
+    margin-left: 350px;
+}
+
 .contactOne
 {
+    
     padding-bottom:44px;
     font-size:26x;
+    margin-left: 700px;
+    margin-bottom:20px;
+    margin-top: -11%;
 }
 
 #message{

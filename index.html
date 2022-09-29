@@ -4,42 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional portfolio</title>
+    <title>Valeri's portfolio</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
     <!--Navigation links they also have a pseudo effect, a fixed position and a z-index background color: whitesmoke-->
+
     <nav>
         <ul>
-            <li><a href="#home"> Home</a></li>
+            <li><a href="#home"> Home</a></li> <span></span>
             <li><a href="#about">About Me</a></li>
             <li><a href="#work">My Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>   
+
     <!-- included divs to the 4 sections-->
+
     <div>
+
         <!--added id's to all h1 to bookmark the links they all have a text-align-->
+
         <h1 id="home"> Home</h1>
 
     </div>
+
 <!--added classes to all divs-->
+
 <!--added a text align to center the image-->
+
     <div class="about">
         <h1 id="about">About Me</h1>
             
             <p id="me"> Hello my name is Valeri Guerrero I recently started my journey with G Code House I been learning how to use HTML and CSS.
                 I'm seeking out opportunities to collaborate with companies and agencies where I can work 
                 with others as a team and bring out the best of our skills. One of my main goals was to create my own 
-                website which is what i'm doing right now. The second goal is to become a professional software engineer. 
-            <br>Some things I do for fun are yoga, taking acting classes and volunteering in film productions.
+                website which is what i'm doing right now. The second goal is to become a professional software engineer.
+            </p> 
+            <br><p>Some things I do for fun are yoga, taking acting classes and volunteering in film productions.
                 I foster animals, me and my friend are always looking for volunteers to help us find them the perfect home.  
             </p>
+            
             <!--a picture of myself from my files-->
-            <img src="Me.png" alt="A picture of myself" width="400" height="500">
+            <figure>
+              <img src="Me.png" alt="A picture of myself">
+              <figcaption class="caption"> Valeri Guerrero</figcaption>
+            </figure>
     </div>
 <!--adding links to my work - opening them in a different tab with target-->
+
 <!--added a border & displayed an inline block-->
+
     <div class="work">
         <h1 id="work">My Work</h1>
         <section class="link">
@@ -50,34 +66,43 @@
         </section>
     </div>
 <!--contact information has text align and padding-bottom-->
+
 <!--added a border radius of 15px-->
+
     <div class="contact">
         
         <h1 id="contact">Contact</h1>
-        <p><h3> You can get in touch with me at <br> <br> 832-705-3204 <br> valeriguerrero22@outlook.com</h3> <h3>or follow me on <a href="https://twitter.com/lifecoachVale" target="_blank">Twitter</a></h3> </p>
+        <p><h3 class="one"> You can get in touch with me at <br><br> valeriguerrero22@outlook.com</h3> <h3 class="one" >or follow me on <a href="https://twitter.com/lifecoachVale" target="_blank" >Twitter</a></h3> </p>
        
         <form>
-            <section class="contactOne">
-            
+            <!--inputs have required attribute-->
+
+            <figure>
+                <figcaption>
+                    <section class="contactOne">
             <label for="name">Your name:</label>
             <br>
-               <input id="name" type="text"/>
+               <input id="name" type="text" required/>
             <br>
             <label for="email"> Your email:</label>
                 <br>
-                <input id="email" type="text"/> 
+                <input id="email" type="text" required/> 
             <br>           
             <label for="message"> Your message:</label>
                 <br>
-                <input id="message" type="text"/>
+                <input id="message" type="text"  minlength="5" maxlength="450" required/>
             <br>
                 <a href=""> 
                 <button>send email</button></a>
+                </section>
+                </figcaption>
+            </figure>
                 
-            </section>
         </form>
     </div>
+
 <!--added links to my footer-->
+
             <footer>
                 <a href="#home"> Home</a><span> -</span>
                 <a href="#about">About Me</a><span> -</span>
