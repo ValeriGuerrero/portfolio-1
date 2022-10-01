@@ -37,8 +37,8 @@ nav{
 }
 
 img {
-    height: 500px;
-    width: 400px;
+    height: 500px !important;
+    width: 400px !important;
 }
 .caption {
     color:black;
@@ -75,10 +75,24 @@ img {
     white-space: normal;
     text-align: center;
     font-size:26x;
+    padding-bottom: 50px;
 }
 
 .contactOne {
     text-align: left;
+}
+
+.inform {
+    display: inline-block;
+    width: 400px;
+    height: 80px;
+    padding-top: 30px;
+}
+
+.form {
+    display: inline-block;
+    width: 200px;
+    height: 70px;
 }
 
 .link {
