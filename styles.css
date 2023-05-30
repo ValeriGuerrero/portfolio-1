@@ -1,122 +1,239 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     background: whitesmoke;
-   
-
+    padding: 1.5rem;
 }
+
+/*BACKGROUND PICTURE*/
+.header {
+    height: 95vh;
+    background-image: url(../img/star.png);
+    background-size: contain;
+    background-position: top;
+    text-align: center;
+    border-radius: 3rem 3rem 0 0;
+}
+
+/*.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+            rgba(126, 213, 111, 0.8),
+            rgba(40, 180, 131, 0.8)),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)
+    clip-path: polygon(26% 0, 73% 0, 100% 24%, 100% 63%, 100% 77%, 0 77%, 0 64%, 0 25%);
+}
+*/
+
+.text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-box .heading-primary {
+    color: white;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+}
+
+
 a:hover {
     color: pink;
 }
 
-nav{
+/*
+nav {
     position: fixed;
     z-index: 5;
 }
-
-.about, .work,
-.contact {
+*/
+.about,
+.work,
+.container {
     background-color: rgb(214, 192, 227);
 }
 
-#home, #about,
-#work, h1#contact {
-    color:black;
+#home,
+#about,
+#work,
+h1#contact {
+    font-size: 4rem;
+    color: black;
     text-align: center;
-    padding: 5px 10px 6px;
+    padding: .5rem 1rem .6rem;
     font-family: cursive;
 }
 
 .about {
     text-align: center;
-    color:black;
+    color: black;
     font-family: bold;
+    font-size: 2rem;
 }
 
 #me {
-    margin: 20px 10px;
+    margin: 2rem 1rem;
     color: rgb(31, 2, 31);
 }
 
 img {
-    height: 500px !important;
-    width: 400px !important;
+    padding: 5rem;
+    height: 50rem;
+    width: 40rem;
+    /*clip-path: inset(2% 8% 20% 20%);*/
 }
+
 .caption {
-    color:black;
+    color: black;
     display: block;
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: italic;
-    line-height: 13px;
+    line-height: 1.3rem;
     top: 80%;
     width: 15%;
 
 }
 
 .work {
-    border: 3px solid coral;
+    border: .3rem solid coral;
     text-align: center;
+}
+
+#work {
+    padding: 2.5rem 0 5rem;
+}
+
+.btn:link,
+.btn:visited {
+
+    text-decoration: none;
+
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-.1rem);
+}
+
+.btn-white {
+    text-transform: uppercase;
+    padding: 2rem 4rem;
+    background-color: lavenderblush;
+    color: black;
 }
 
 #github,
-#linkedin
-{
+#linkedin {
     font-weight: bold;
-    font-size: 26px;
-    padding-bottom:64px;
+    font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
-.contact {
-    border: 3px solid coral;
-    border-radius: 15px;
+.btn-small {
+
+    padding: .8rem .8rem;
+    background-color: lavenderblush;
+    color: black;
+}
+
+.container {
+
+    border: solid coral;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.contain {
+    width: 50rem;
+    height: 20rem;
+    padding-top: 10rem;
+    /*border-radius: 15px;*/
     white-space: normal;
     text-align: center;
-    font-size:26x;
+    font-size: 1.5rem;
     padding-bottom: 50px;
 }
 
-.contactOne {
-    text-align: left;
+.inform {
+    font-size: 1.5rem;
+    width: 50rem;
+    height: 20rem;
+    display: inline-block;
+    padding-top: 3rem;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+
 }
 
-.inform {
-    display: inline-block;
-    width: 400px;
-    height: 80px;
-    padding-top: 30px;
+.one {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .form {
     display: inline-block;
-    width: 200px;
-    height: 70px;
+    width: 20rem;
+    height: 7rem;
 }
 
 .link {
     display: inline-block;
-    width: 300px;
-    height: 200px;
+    width: 30rem;
+    height: 20rem;
 }
 
-#message{
-    height:62px;
+#message {
+    height: 6.2rem;
 }
 
-footer { 
-    height:100px; 
-    background-color:lavender;
-    text-align:center; 
-    padding-top: 70px;
-    } 
+footer {
+    height: 20rem;
+    background-color: lavender;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 7rem;
+}
 
-.bottom{
-    border: 6px solid rgb(244, 170, 170);
+.bottom {
+    border: .6rem solid rgb(244, 170, 170);
     font-weight: bold;
 }
 
 #date {
-    margin-left: 10px; 
+    margin-left: 1rem;
 }
